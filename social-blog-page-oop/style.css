@@ -30,7 +30,7 @@ body {
 }
 
 .nav__logo{
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .nav__account {
@@ -40,7 +40,6 @@ body {
     height: 100%;
 }
 .nav__link {
-    font-size: 1.3rem;
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -80,20 +79,17 @@ main {
 }
 .search-icon {
     color: lightgray;
-    font-size: 2.38rem;
+    font-size: 2rem;
+    height: 2.38rem;
+    padding: 0 .25rem;
     border-top: 1px solid lightgrey;
     border-right: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
     border-radius: 0 .5rem .5rem 0;
 }
 
-
 .search-greeting {
     justify-self: end;
-}
-
-.post__img {
-    width: 50%;
 }
 
 .today {
@@ -105,5 +101,39 @@ main {
     display:flex;
     justify-self: end;
 }
+
+.today__face {
+    width: 3rem;
+    border-radius: 50%;
+    border: 3px dotted rgb(153, 156, 170);
+    transform: translateY(-25%);
+    margin: 0 .5rem;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+}
+.post__head {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+}
+
+.post__logo {
+    font-size: 1.5rem;
+    background: rgba(211, 211, 211, 0.486);
+    color: skyblue;
+    padding: .5rem;
+    border-radius: 25%;
+}
+
+.post__img {
+    width: 100%;
+}
+.post__main {
+    justify-self: start;
+}
+
 
 
