@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instantbook - Share your life!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <h1 class="nav__logo">Sharespace</h1>
+       <section class="nav__account">
+           <ul class="nav__links-top nav__links">
+               <li class="nav__link"><ion-icon name="home-outline"></ion-icon>Home</li>
+               <li class="nav__link"><ion-icon name="newspaper-outline"></ion-icon>My Profile</li>
+               <li class="nav__link"><ion-icon name="chatbubbles-outline"></ion-icon>Messages</li>
+               <li class="nav__link"><ion-icon name="magnet-outline"></ion-icon>Activity</li>
+               <li class="nav__link"><ion-icon name="settings-outline"></ion-icon>Settings</li>
+           </ul>
+       </section>
+       <section class="nav__groups">
+        <ul class="nav__links-bottom nav__links">
+            <h4 class="nav__groups-heading">Groups:</h4>
+            <li class="nav__link"><ion-icon name="logo-javascript"></ion-icon>Javascript</li>
+            <li class="nav__link"><ion-icon name="logo-html5"></ion-icon>HTML</li>
+            <li class="nav__link"><ion-icon name="logo-css3"></ion-icon>CSS</li>        
+        </ul>
+       </section>
+    </nav>
+    <main>
+        <div class="search">
+            <form class="search-form">
+                <input class="search__input" type="text" placeholder="Search"><ion-icon class="search-icon" name="search"></ion-icon>
+            </form>
+            <h3 class="search-greeting">Hey, James!</h3>
+        </div>
+        <div class="today">
+            <h3 class="today__heading">Todays Top Posts</h3>
+            <ul class="today__posters">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="post">
+                <img class="post__img" src="./img/mand-holding-cup.jpg" alt="marcus">
+                <div class="post__main">
+                    <div class="post__head">
+                        <ion-icon name="logo-react"></ion-icon>
+                        <h4>How To Succeed Im React</h4>
+                        <p>Posted - <span>Thu 10:00</span></p>
+                    </div>
+                    <div class="post__info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nam a perferendis est officia quia dolore sit aliquam distinctio excepturi.</p>
+                    </div>
+                    <div class="post__reactions">
+                        <button>Like</button>
+                        <button>Dislike</button>
+                        <div class="post__react">
+                            <p>Likes: <span>10</span></p>
+                            <p>Dislikes: <span>02</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <div>
+            CHAT
+        </div>
+    </aside>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
