@@ -23,14 +23,13 @@ body {
 
 .nav {
     display: grid;
-    height: 100vh;
     grid-template-rows: 15% 1fr 1fr;
     align-items: center;
     justify-content: center;
 }
 
 .nav__logo{
-    font-size: 1.6rem;
+    width: 8rem;
 }
 
 .nav__account {
@@ -124,7 +123,12 @@ main {
 .post {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    gap: 4rem;
+    gap: 2rem;
+    padding: 1rem;
+}
+.post:hover {
+    background: rgba(245, 245, 245, 0.781);
+    cursor: pointer;
 }
 .post__head {
     display: grid;
@@ -152,6 +156,9 @@ main {
 
 .post__info {
     margin: 1rem 0;
+}
+.post__info-text {
+    color: rgb(63, 63, 63);
 }
 
 .post__main {
