@@ -44,6 +44,10 @@ body {
     gap: 1rem;
     align-items: center;
 }
+
+.nav__link img {
+    width: 1.2rem;
+}
 .nav__links {
     line-height: 3rem;
 }
@@ -110,6 +114,13 @@ main {
     margin: 0 .5rem;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-bottom: 4rem;
+}
+
 .post {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -117,23 +128,68 @@ main {
 }
 .post__head {
     display: grid;
-    grid-template-columns: 10% 1fr;
+    grid-template-columns: auto 1fr;
+    gap: .5rem;
 }
 
 .post__logo {
-    font-size: 1.5rem;
-    background: rgba(211, 211, 211, 0.486);
-    color: skyblue;
-    padding: .5rem;
-    border-radius: 25%;
+    width: 2.5rem;
+    place-self: center;
 }
+
+.post__heading {
+    font-size: 1.2rem;
+}
+
+.post__heading-sub {
+    font-size: .9rem;
+}
+
 
 .post__img {
     width: 100%;
 }
-.post__main {
-    justify-self: start;
+
+.post__info {
+    margin: 1rem 0;
 }
 
+.post__main {
+    display: grid;
+    grid-template-rows: auto 1fr 10%;
+    justify-self: start;
 
+}
+
+.post__reactions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.post__reactions-author {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.post__reactions-author img {
+    width: 1.5rem;
+    border-radius: 50%;
+    margin-left: .5rem;
+}
+
+.post__reactions-btns {
+    display: flex;
+    align-items: center;
+}
+
+.post__reactions-like-btn {
+    width: 1.2rem;
+    margin-right: .25rem;
+}
+
+.post__react {
+    display: flex;
+    gap: 1rem;
+}
 

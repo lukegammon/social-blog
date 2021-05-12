@@ -11,22 +11,22 @@
 </head>
 <body>
     <nav class="nav">
-        <h1 class="nav__logo">Sharespace</h1>
+        <h1 class="nav__logo">Codespace</h1>
        <section class="nav__account">
            <ul class="nav__links-top nav__links">
-               <li class="nav__link"><ion-icon name="home-outline"></ion-icon>Home</li>
-               <li class="nav__link"><ion-icon name="newspaper-outline"></ion-icon>My Profile</li>
-               <li class="nav__link"><ion-icon name="chatbubbles-outline"></ion-icon>Messages</li>
-               <li class="nav__link"><ion-icon name="magnet-outline"></ion-icon>Activity</li>
-               <li class="nav__link"><ion-icon name="settings-outline"></ion-icon>Settings</li>
+               <li class="nav__link"><img src="./img/icons/home.svg" alt="home">Home</li>
+               <li class="nav__link"><img src="./img/icons/profile.svg" alt="profile">My Profile</li>
+               <li class="nav__link"><img src="./img/icons/liked-posts.svg" alt="message">Liked Posts</li>
+               <li class="nav__link"><img src="./img/icons/message.svg" alt="message">Messages</li>
+               <li class="nav__link"><img src="./img/icons/settings.svg" alt="profile">Settings</li>
            </ul>
        </section>
        <section class="nav__groups">
         <ul class="nav__links-bottom nav__links">
             <h4 class="nav__groups-heading">Groups:</h4>
-            <li class="nav__link"><ion-icon name="logo-javascript"></ion-icon>Javascript</li>
-            <li class="nav__link"><ion-icon name="logo-html5"></ion-icon>HTML</li>
-            <li class="nav__link"><ion-icon name="logo-css3"></ion-icon>CSS</li>        
+            <li class="nav__link"><img src="./img/icons/javascript.svg" alt="javascript">Javascript</li>
+            <li class="nav__link"><img src="./img/icons/html5.svg" alt="html5"></ion-icon>HTML</li>
+            <li class="nav__link"><img src="./img/icons/css3.svg" alt="css3"></ion-icon>CSS</li>        
         </ul>
        </section>
     </nav>
@@ -48,25 +48,81 @@
             </ul>
         </div>
         <div class="content">
+
             <div class="post">
-                <img class="post__img" src="./img/alberto-full-copy.jpg" alt="marcus">
+                <img class="post__img" src="./img/reactvsvue.png" alt="marcus">
                 <div class="post__main">
                     <div class="post__head">
-                        <ion-icon class="post__logo" name="logo-react"></ion-icon>
+                        <img class="post__logo" src="./img/icons/vue.svg" alt="vue">
                         <div class="post__heading">
-                            <h4>How To Succeed In React</h4>
-                            <p>Posted - <span>Thu 10:00</span></p>
+                            <h4>Vue.js Is Good, But Is It Better Than Angular Or React?</h4>
+                            <p class="post__heading-sub">Posted - <span class="post__heading-date">Tue 22nd Jan 14:30</span></p>
                         </div>
                     </div>
                     <div class="post__info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nam a perferendis est officia quia dolore sit aliquam distinctio excepturi.</p>
+                        <p>It has got some fairly basic docs but they do a good job, and while there isn’t a great deal to learn compared to angular – this is a good thing as it’s deceptively powerful. PageKit, Python China are two of the projects using Vue among many. Here’s the list. Also, it has a two-way data binding facility like Angular and Virtual DOM like React.
+
+                            Now, we hope your basic concept about Vue.js is quite clear. Hence, before we start discussing React vs Vue vs Angular, let us check their current position...</p>
                     </div>
                     <div class="post__reactions">
-                        <button>Like</button>
-                        <button>Dislike</button>
-                        <div class="post__react">
-                            <p>Likes: <span>10</span></p>
-                            <p>Dislikes: <span>02</span></p>
+                        <div class="post__reactions-author">
+                            <p>Posted by: Lydia</p>
+                            <img src="./img/lydia-face.png" alt="lydia">
+                        </div>
+                        <div class="post__reactions-btns">
+                            <img class="post__reactions-like-btn" src="./img/icons/like.svg" alt="like"><span>24</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <img class="post__img" src="./img/css3gradients.jpg" alt="marcus">
+                <div class="post__main">
+                    <div class="post__head">
+                        <img class="post__logo" src="./img/icons/css3.svg" alt="css">
+                        <div class="post__heading">
+                            <h4>CSS Linear Gradients</h4>
+                            <p class="post__heading-sub">Posted - <span class="post__heading-date">Sun 10th Dec 18:00</span></p>
+                        </div>
+                    </div>
+                    <div class="post__info">
+                        <p>Just as you can declare the background of an element to be a solid color in CSS, you can also declare that background to be a gradient. Using gradients declared in CSS, rather using an actual image file, is better for control and performance. Gradients are typically one color that fades into another, but in CSS you can control every aspect of how that happens, from the direction to the colors (as many as you want) to where those color changes happen. Let’s go through it all.
+
+                        </p>
+                    </div>
+                    <div class="post__reactions">
+                        <div class="post__reactions-author">
+                            <p>Posted by: Vin</p>
+                            <img src="./img/vin-face.png" alt="lydia">
+                        </div>
+                        <div class="post__reactions-btns">
+                            <img class="post__reactions-like-btn" src="./img/icons/notliked.svg" alt="like"><span>18</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <img class="post__img" src="./img/react101.webp" alt="marcus">
+                <div class="post__main">
+                    <div class="post__head">
+                        <img class="post__logo" src="./img/icons/react.svg" alt="react">
+                        <div class="post__heading">
+                            <h4>How To Succeed In React</h4>
+                            <p class="post__heading-sub">Posted - <span class="post__heading-date">Thu 24th Jan 10:00</span></p>
+                        </div>
+                    </div>
+                    <div class="post__info">
+                        <p>React does not have a steep learning curve when following one simple rule: Learn React, only React step by step, and don't let yourself distract from other tech on this journey. JavaScript and React are evolving constantly, because both stay innovative and want to stay relevant in the future too; so learn and keep up with them first before learning anything else on top of it...</p>
+                    </div>
+                    <div class="post__reactions">
+                        <div class="post__reactions-author">
+                            <p>Posted by: Alberto</p>
+                            <img src="./img/alberto-face.png" alt="lydia">
+                        </div>
+                        <div class="post__reactions-btns">
+                            <img class="post__reactions-like-btn" src="./img/icons/like.svg" alt="like"><span>10</span>
                         </div>
                     </div>
                 </div>
